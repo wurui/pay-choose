@@ -14,15 +14,19 @@
         <icon>//oxm1.cc/img/app_default.png</icon>
     </p>
     <data>
-            <options>
-        <i>
-            <text>
-                laptop
-            </text>
-            <value>
-                camera
-            </value>
-        </i>
-    </options>
+        <options>
+            <i>
+                <text>微信支付</text>
+                <value>weixin</value>
+            </i>
+            <i>
+                <text>支付宝</text>
+                <value>alipay</value>
+            </i>
+            <i>
+                <text>银行卡</text>
+                <value>unknown</value>
+            </i>
+        </options>
     </data>
 </root>

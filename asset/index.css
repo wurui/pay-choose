@@ -1,3 +1,76 @@
-.oxmod-pay-choose{
-/* CSS */
- }
+.oxmod-pay-choose {
+  /* CSS */
+}
+.oxmod-pay-choose .error {
+  color: #f10;
+  text-align: center;
+  margin: 20px;
+}
+.oxmod-pay-choose .payment {
+  background-color: #fff;
+}
+.oxmod-pay-choose .payment > li {
+  padding: 15px 10px;
+  min-height: 30px;
+  border-top: solid 1px #f5f5f5;
+}
+.oxmod-pay-choose .payment > li:last-child {
+  border-bottom: solid 1px #f5f5f5;
+}
+.oxmod-pay-choose .payment > li > label,
+.oxmod-pay-choose .pay-alipay,
+.oxmod-pay-choose .pay-weixin,
+.oxmod-pay-choose .pay-weixinh5,
+.oxmod-pay-choose .pay-applepay {
+  background-repeat: no-repeat;
+  background-position: 6px center;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  background-size: contain;
+  width: 95%;
+  text-align: left;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+.oxmod-pay-choose .payment > li > label input,
+.oxmod-pay-choose .pay-alipay input,
+.oxmod-pay-choose .pay-weixin input,
+.oxmod-pay-choose .pay-weixinh5 input,
+.oxmod-pay-choose .pay-applepay input {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  float: right;
+}
+.oxmod-pay-choose .pay-alipay {
+  background-image: url(http://i.oxm1.cc/uploads/git/wurui/img/2ag7uubwmTj34i79t6Rl9ypA4le-940.png@!w60);
+}
+.oxmod-pay-choose .pay-weixin,
+.oxmod-pay-choose .pay-weixinh5,
+.oxmod-pay-choose .pay-weixinpay {
+  background-image: url(http://i.oxm1.cc/uploads/git/wurui/img/2ac0s6jloTj7bkv244Ru719A7lm-699.png@!w60);
+}
+.oxmod-pay-choose .pay-applepay {
+  background-image: url(http://i.oxm1.cc/uploads/git/wurui/img/2aj0at8unTj0c28cv5Rwe6fA7dh-612.png@!w120);
+}
+.oxmod-pay-choose .pay-applepay:before {
+  content: 'Apply Pay';
+  float: left;
+  margin-left: 70px;
+  color: #555;
+}
+.oxmod-pay-choose .bt-submit {
+  width: 100%;
+  height: 40px;
+  background-color: #f60;
+  color: #fff;
+  border: solid 1px #f99;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 1px 1px 2px #ccc;
+}
+.oxmod-pay-choose .op {
+  padding: 20px 10px;
+}
