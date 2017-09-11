@@ -20,13 +20,14 @@
                 <value>weixin</value>
             </i>
             <i>
+                <text>微信支付H5</text>
+                <value>weixinh5</value>
+            </i>
+            <i>
                 <text>支付宝</text>
                 <value>alipay</value>
             </i>
-            <i>
-                <text>银行卡</text>
-                <value>unknown</value>
-            </i>
+
         </options>
     </data>
 </root>
