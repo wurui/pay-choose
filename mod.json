@@ -1,0 +1,6 @@
+{
+  "name": "pay-choose",
+  "version": "0.0.1",
+  "apiDependencies": ["options"]
+}
+
