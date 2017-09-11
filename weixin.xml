@@ -3,7 +3,7 @@
 <root>
     <env>
         <domain>local</domain>
-        <client></client>
+        <client>weixin</client>
     </env>
     <login>
         <uid>git/wurui</uid>

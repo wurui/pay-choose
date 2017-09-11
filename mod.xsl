@@ -9,7 +9,7 @@
                 <xsl:variable name="isWeixin" select="env/client = 'weixin'"/>
                 <ul class="payment">
                     <xsl:for-each select="data/options/i">
-                        <xsl:if test="not($isWeixin and value = 'weixinh5') and not(not($isWeixin) and value = 'weixin')">
+                        <xsl:if test="not($isWeixin and value = 'weixinh5') and not($isWeixin and value = 'alipay') and not(not($isWeixin) and value = 'weixin')">
                             <li class="paymethod_{value}">
                                 <label class="pay-{value}">
                                     <input type="radio" name="paymethod" value="{value}">
@@ -21,7 +21,6 @@
                                 </label>
                             </li>
                         </xsl:if>
-
                     </xsl:for-each>
                 </ul>
                 <xsl:choose>
