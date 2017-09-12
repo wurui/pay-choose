@@ -7,25 +7,24 @@
                 <input type="hidden" name="_id" value="{q/_id}"/>
                 <input type="hidden" name="oid" value="{q/oid}"/>
                 <xsl:variable name="isWeixin" select="env/client = 'weixin'"/>
+                <xsl:variable name="list" select="data/options/i[not($isWeixin and value = 'weixinh5') and not($isWeixin and value = 'alipay') and not(not($isWeixin) and value = 'weixin')]"></xsl:variable>
                 <ul class="payment">
-                    <xsl:for-each select="data/options/i">
-                        <xsl:if test="not($isWeixin and value = 'weixinh5') and not($isWeixin and value = 'alipay') and not(not($isWeixin) and value = 'weixin')">
-                            <li class="paymethod_{value}">
-                                <label class="pay-{value}">
-                                    <input type="radio" name="paymethod" value="{value}">
-                                        <xsl:if test="position() = 1">
-                                            <xsl:attribute name="checked">checked</xsl:attribute>
-                                        </xsl:if>
-                                    </input>
-                                    <xsl:value-of select="text"/>
-                                </label>
-                            </li>
-                        </xsl:if>
+                    <xsl:for-each select="$list">
+                        <li class="paymethod_{value}">
+                            <label class="pay-{value}">
+                                <input type="radio" name="paymethod" value="{value}">
+                                    <xsl:if test="position() = 1">
+                                        <xsl:attribute name="checked">checked</xsl:attribute>
+                                    </xsl:if>
+                                </input>
+                                <xsl:value-of select="text"/>
+                            </label>
+                        </li>
                     </xsl:for-each>
                 </ul>
                 <xsl:choose>
-                    <xsl:when test="count(data/options/i) = 0 ">
-                        <h3 class="error">商家未配置任何支付方式</h3>
+                    <xsl:when test="count($list) = 0 ">
+                        <h3 class="error">商家未配置支付方式</h3>
                     </xsl:when>
                     <xsl:otherwise>
                         <div class="op">

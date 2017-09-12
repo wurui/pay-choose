@@ -17,10 +17,6 @@
     <data>
         <options>
             <i>
-                <text>微信支付</text>
-                <value>weixin</value>
-            </i>
-            <i>
                 <text>微信支付H5</text>
                 <value>weixinh5</value>
             </i>
@@ -28,6 +24,11 @@
                 <text>支付宝</text>
                 <value>alipay</value>
             </i>
+            <i>
+                <text>微信支付</text>
+                <value>weixin</value>
+            </i>
+
 
         </options>
     </data>
