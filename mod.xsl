@@ -6,6 +6,7 @@
             <form action="{$payurl}">
                 <input type="hidden" name="_id" value="{q/_id}"/>
                 <input type="hidden" name="oid" value="{q/oid}"/>
+                <input type="hidden" name="backurl" value="{q/backurl}"/>
                 <xsl:variable name="isWeixin" select="env/client = 'weixin'"/>
                 <xsl:variable name="list" select="data/options/i[not($isWeixin and value = 'weixinh5') and not($isWeixin and value = 'alipay') and not(not($isWeixin) and value = 'weixin')]"></xsl:variable>
                 <ul class="payment">
